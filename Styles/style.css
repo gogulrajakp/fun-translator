@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 
 * , *::after , *::before{
   margin: 0;
@@ -16,8 +16,10 @@ html{
 }
 
 body{
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color: var(--c-dark);
+  font-family: 'Ubuntu', sans-serif;
+  /* background-color: var(--c-dark); */
+  background-image: url(../Assets/languages.jpg);
+  background-size: cover;
   color: var(--c-white);
   display: flex;
   flex-direction: column;
@@ -34,6 +36,10 @@ main{
 
 h1{
   margin-bottom: 1rem;
+  background-color: rgba( 0,0,0, 0.8);
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 textarea{
@@ -46,7 +52,9 @@ textarea{
   border: 2px solid var(--c-white);
   color: var(--c-white);
   font-weight: 600;
-  background: transparent;
+  /* background: var(--c-dark); */
+  background: rgba( 0, 0, 0, 0.6 );
+  backdrop-filter: blur( 2px );
 }
 
 textarea:focus{
@@ -54,20 +62,41 @@ textarea:focus{
 }
 
 button{
-  background: var(--c-white);
-  color: var(--c-dark);
+  background: var(--c-dark);
+  color: var(--c-white);
   padding: 0.8rem 1rem;
   font-size: 1.3rem;
   font-weight: 500;
   border: 2px solid var(--c-white);
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   display: block;
-  width: 80%;
+  width: 50%;
   margin: 0.5rem auto;
 }
 
+button:hover{
+  background-color: var(--c-white);
+  color: var(--c-dark);
+  border-color: 2px solid var(--c-dark);
+}
+
+select{
+  border: 0.4rem;
+  background-color: var(--c-white);
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  padding: 0.3rem 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+}
+
 h2{
-  margin: 1rem auto;
+  margin: 1rem;
+  background-color: rgba( 0,0,0, 0.8);
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
 }
 
 .output{
@@ -80,4 +109,6 @@ h2{
   border: 2px solid var(--c-white);
   color: var(--c-white);
   font-weight: 600;
+  background: rgba( 0, 0, 0, 0.6 );
+  backdrop-filter: blur( 2px );
 }
